@@ -9,7 +9,71 @@
     
 </head>
 <body>
-    <h1>You are in the contact page</h1>
-    <script src= "/BOOTSTRAP/bootstrap-5.2.2-dist/js/bootstrap.min.js" ></script>
+    
+    <script src= "/BOOTSTRAP/bootstrap-5.2.1-dist/js/bootstrap.min.js" ></script>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>    
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <h1 class="text-center" style="background-color:LightBlue;" >Contect Us</h1>
+
+      <form>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text">Name</span>
+       <input type="text" class="form-control" placeholder="First" aria-label="Username">
+       <input type="text" class="form-control" placeholder="Last" aria-label="Server">
+    </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">Email</span>
+          <input type="text" class="form-control" placeholder="@gmail.com" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group">
+          <span class="input-group-text">Message</span>
+          <textarea class="form-control"  aria-label="With textarea"></textarea>
+        </div>
+     
+         <h1>Priority</h1>
+         <div class="form-check">
+          <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Low
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+           Midium
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+          <label class="form-check-label" for="flexRadioDefault3">
+           High
+          </label>
+        </div>
+        
+   
+       
+        <button type="submit" class="btn btn-primary">Submit form</button>
+      </form>
 </body>
 </html>
